@@ -35,7 +35,7 @@ If you want to run the project in default mode, and run the following command wh
 ``` 
 	java -cp MultiThreadedWebServer-0.0.1-SNAPSHOT.jar myserver.Application 
 ```
-Test by going to :
+Test by going to the browser and hitting the following url :
 
 `http://localhost:9999/sample.html`
 
@@ -47,6 +47,7 @@ If you want to have your own root directory for the hosting files, you can creat
 java -cp MultiThreadedWebServer-0.0.1-SNAPSHOT.jar myserver.Application  <optional root path> <optional port> <optional threads limit>
 
 ```
+Test by going to the browser and hitting the following url:
 
 `http://localhost:<port>/<webpage>`
 
