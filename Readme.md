@@ -31,7 +31,7 @@ Connection: Closed
 5) Running the setup.Clone the repo and cd to `multithreaded-webserver`.
 
 
-If you want to run the project in default mode, and run the following command :
+If you want to run the project in default mode, and run the following command which will expose the webpages inside the sampleroot web directory with web server hosted on port 9999 and default number of worker thread as 10:
 ``` 
 	java -cp MultiThreadedWebServer-0.0.1-SNAPSHOT.jar myserver.Application 
 ```
