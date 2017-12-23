@@ -41,7 +41,7 @@ Test by going to the browser and hitting the following url :
 
 **OR**
 
-If you want to have your own root directory for the hosting files, you can create this root directory inside the same directory where the `MultiThreadedWebServer-0.0.1-SNAPSHOT.jar` file is located. And keep your webpages in this root directory. In addition, if you want to your customized port number and thread limit you can do so by running the following command in terminal.
+If you want to have your own web-root directory for the hosting files, you can create this web-root directory inside the same directory(in this case multithreaded-webserver)  where the `MultiThreadedWebServer-0.0.1-SNAPSHOT.jar` file is located. And keep your webpages in this web-root directory. In addition, if you want to your customized port number and thread limit you can do so by running the following command in terminal.
 
 ```
 java -cp MultiThreadedWebServer-0.0.1-SNAPSHOT.jar myserver.Application  <optional root path> <optional port> <optional threads limit>
