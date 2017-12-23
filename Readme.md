@@ -4,18 +4,18 @@ Implemented Classes
 
 1) Application.java : Main Method of Program and calls the Server thread
 
-2) Server.java : Server.java does the heavy lifting of  creating a threadpool which takes the number of thread created as a parmeter. If not given the number of threads spawn would be 10. Also, it is reponsible to create socket for server  using **ServerSocket** and accepts the calls from client using **ServerSocket.accept()*** method
+2) Server.java : Server.java does the heavy lifting of  creating a threadpool which takes the number of thread created as an input argument. If not given the number of threads spawn would be 10. Also, it is reponsible to create socket for server  using **ServerSocket** and accepts the calls from client using **ServerSocket.accept()** method
 
-3) Connection.java : This is reponsible for creating a connection between Server and client. It then takes input from Client which uses it own socket to communicate to server. The client uses input and  
+3) Connection.java : This is reponsible for creating a connection between Server and client. It then takes input from Client which uses it own socket to communicate to server. The client uses input and  pass it to the HttpRequest class for creating a HTTP request call.
 
-3) HttpRequest.java : It takes the input from the client as a stream and construct the http request message as below and retun thr request object:
+3) HttpRequest.java : It takes the input from the client as a stream and construct the http request message as below and return the request objectw with the following  request message :
  ```
   GET /prod/languagecomparison HTTP/1.1
 		   Host: ksatyam.execute-api.us-east-2.amazonaws.com
 		   Content-Type: application/json
 		   
 ```
-4) HttpResponse.java : After the request has been invoked the HttpReponse class would be responsible to render the the requested web page along with reponse code in the header and return the response object.Creation of http response header will have the following values:
+4) HttpResponse.java : After the request has been invoked the HttpResponse class would be responsible to render the the requested web page along with response code in the header and return the response object. Creation of http response header will have the following values:
 
 ```
 Creating response string
