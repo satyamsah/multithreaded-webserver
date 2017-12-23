@@ -28,4 +28,26 @@ Content-Type: text/html
 Connection: Closed
 ```
 
+5) Running the setup.Clone the repo and cd to `multithreaded-webserver`.
+
+
+If you want to run the project in default mode, and run the following command :
+``` 
+	java -cp MultiThreadedWebServer-0.0.1-SNAPSHOT.jar myserver.Application 
+```
+Test by going to :
+
+`http://localhost:9999/sample.html`
+
+**OR**
+
+If you want to have your own root directory for the hosting files, you can create this root directory inside the same directory where the `MultiThreadedWebServer-0.0.1-SNAPSHOT.jar` file is located. And keep your webpages in this root directory. In addition, if you want to your customized port number and thread limit you can do so by running the following command in terminal.
+
+```
+java -cp MultiThreadedWebServer-0.0.1-SNAPSHOT.jar myserver.Application  <optional root path> <optional port> <optional threads limit>
+
+```
+
+http://localhost:<port>/<webpage>
+
 
