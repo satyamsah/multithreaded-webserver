@@ -1,0 +1,7 @@
+.settings
+target
+src/test
+src/main/resources
+.classpath
+.project
+gitignore
